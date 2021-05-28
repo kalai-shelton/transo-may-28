@@ -1,0 +1,82 @@
+<section class="site-contact">
+  <div class="container" style="padding-top: 40px; ">
+    <h2 class="site-contact-title text-center " style="padding-bottom: 10px;">
+      {{ .Params.title | safeHTML }}
+    </h2>
+    <p class="text-center"> {{.Params.heading}}</p>
+    <div class="row conSection1">
+
+      <div class="col-md-6">
+        
+
+        <div class="site-contact-form">
+          <form id="contact-form" action="{{ .Site.Params.formspreeFormUrl }}" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="full-name" id="full-name" placeholder="Full Name">
+              </div>
+              <div class="col-md-12">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="phone-number" id="phone-number"
+                  placeholder="Phone Number">
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="organization" id="organization"
+                  placeholder="Organization">
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="industry" id="industry" placeholder="Industry">
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"></textarea>
+              </div>
+              
+
+                    <input type="hidden" id="utmSrc" name="utmSrc" value="">
+                            <input type="hidden" id="utmCamp" name="utmCamp" value="">
+                            <input type="hidden" id="clickId" name="clickId" value="">
+                            <div class="col-md-12" style="padding-bottom:20px;">
+                                
+                              <span class="">
+                                  By sending these details, I agree to the terms and conditions.
+                              </span>
+                      </div>
+
+              <div class="col-md-12">
+                <button aria-label="contactus"  type="submit" class="btn-contact" id="contact-form-button">
+                  <span class="btn-area">
+                    <span data-text="Send Message" >
+                      Send
+                    </span>
+                  </span>
+                </button>
+              </div>
+              <p id="contact-form-status"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-10">
+       <img class=" contactImg" src="{{.Params.contactImg}}" />
+      
+    </div>
+      
+    <div class="address  text-center">
+    <p><span> <i class="fa fa-map-marker fa-3x" style="color:#FAAD26;" aria-hidden="true"></i></span>ADDRESS</p></span>
+      <p class=" text-center"> 
+       
+          Corporate office:630, 
+          1 st Main Road, <br/> <br/>
+          Indranagar 1st Stage,
+          Bengaluru-560038,<br/> <br/>
+          Karnataka,India
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>

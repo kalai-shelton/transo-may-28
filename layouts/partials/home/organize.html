@@ -1,0 +1,64 @@
+{{ with .Site.Params.organize }} {{ if .enable }} {{ "<!-- Site Clients Start -->"|safeHTML}}
+<section class="home-organize">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>
+          {{ .heading1 }} <br />
+          <span class="heading2"> {{.heading2}} </span>
+        </h2>
+        <p>{{ .para1 }}</p>
+        <p class="orgP">{{ .para2 }}</p> 
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="org3section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 jumbotron1 shipperbg">
+        <h3 class="shipperbgHead">{{.img1Value}}</h3>
+      </div>
+
+      <div class="col-md-4 jumbotron1 driverbg">
+        <h3 class="driverbgHead">{{.img2Value}} </h3>
+      </div>
+
+    <div class="col-md-4 jumbotron1 carrierbg">
+        <h3 class="carrierbgHead">{{.img3Value}}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<div class="container">
+  <div class="lineSection">
+    <div class="dotted-line">
+      <svg  height="10%" width="60%" >
+          <g fill="none" stroke="#FAAD26" stroke-width="4">
+            <path stroke-dasharray="5,5" d="M5 10 l150 0" stroke-linecap="roundanchor" />
+        
+          <circle cx="7" cy="9" r="5" 
+              fill="#FAAD26" />
+              <circle cx="150" cy="9" r="5" 
+              fill="#FAAD26" />
+            </g>
+        </svg>
+    </div>
+
+    <div class="dotted-line1">
+      <svg  height="10%" width="60%" >
+          <g fill="none" stroke="#FAAD26" stroke-width="4">
+            <path stroke-dasharray="5,5" d="M5 10 l150 0" stroke-linecap="roundanchor" />
+        
+          <circle cx="7" cy="9" r="5" 
+              fill="#FAAD26" />
+              <circle cx="150" cy="9" r="5" 
+              fill="#FAAD26" />
+            </g>
+        </svg>
+    </div>
+  </div>
+</div>-->
+
+{{ "<!-- Site Hero End -->" | safeHTML }} {{ end }} {{ end }}

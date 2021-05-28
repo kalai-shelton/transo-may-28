@@ -1,0 +1,67 @@
+<section id="analytics">
+  <div class="container" >
+  <div class="col-md-8">
+    <h1 class="analytics-h1">{{ .Params.analyticsH }}</h1>
+    <h5 class="opOph5">{{ .Params.analyticsC }}</h5>
+  </div>
+  <div class="opOpBg" style="background-image: url('{{ .Params.analyticsImg }}');">
+    
+  </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row" style="justify-content: center">
+      <div class="col-md-6 ">
+        <div class="row capOpH">
+          <div class="d-flex">
+            <div class="col-md-9">
+              <h3>
+                <span class="capOpH1"> {{ .Params.repH1 }}</span> <br />
+                <span class="capOpH2">{{ .Params.repH2 }}</span>
+                <span class="capOpH2">{{ .Params.repH3 }}</span>
+              </h3>
+            </div>
+            <div class="col-md-6 ">
+              <img
+                class="logoOpImg"
+                src="{{.Params.repImg}}"
+                alt="Transo analytics Image"
+                class="src"
+              />
+            </div>
+          </div>
+          <ul class="capP1">
+            <li>{{ .Params.repC }}</li>
+            <li>{{ .Params.repC1 }}</li>
+            <li>{{ .Params.repC2}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row capOpH capOpHroute">
+          <div class="d-flex">
+            <div class="col-md-8">
+              <h3>
+                <span class="capOpH1"> {{ .Params.digDH1 }}</span> <br />
+                <span class="capOpH2"> {{ .Params.digDH2 }}</span>
+              </h3>
+            </div>
+            <div class="col-md-6">
+              <img
+                class="logoOpImg"
+                src="{{.Params.digDImg}}"
+                alt="Transo Analytics Image2"
+                class="src"
+              />
+            </div>
+          </div>
+          <ul class="capP2">
+            <li>{{ .Params.digDC }}</li>
+            <li>{{ .Params.digDC1 }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
